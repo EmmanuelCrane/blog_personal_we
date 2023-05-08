@@ -1,102 +1,144 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import HeroImageRight from "@/components/home/HeroHome";
+import lobo from "/public/images/inicio.jpg";
+import SectionCards from "@/components/home/SectionCards";
+import BannerHome from "@/components/home/BannerHome";
 
-const inter = Inter({ subsets: ['latin'] })
+import imagen from "/public/images/imageBanner.svg";
+import SectionCardImage from "@/components/home/SectionCardImages";
+import SectionCardImageFuture from "@/components/futures/SectionCardImageFuture";
 
-export default function Home() {
+
+const page = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <>
+      <HeroImageRight />
+      <SectionCards
+        articles={[
+          {
+            image: lobo.src,
+            category: "decorations",
+            title: "Top 50 underrated plants for house decoration",
+            footer: "733 people liked this",
+            author: {
+              name: "Elsa Gardenowl",
+              description: "posted 34 minutes ago",
+              image:
+                "https://images.unsplash.com/photo-1628890923662-2cb23c2e0cfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
+            },
+          },
+          {
+            image: lobo.src,
+            category: "decorations",
+            title: "Top 50 underrated plants for house decoration",
+            footer: "733 people liked this",
+            author: {
+              name: "Elsa Gardenowl",
+              description: "posted 34 minutes ago",
+              image:
+                "https://images.unsplash.com/photo-1628890923662-2cb23c2e0cfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
+            },
+          },
+          {
+            image: lobo.src,
+            category: "decorations",
+            title: "Top 50 underrated plants for house decoration",
+            footer: "733 people liked this",
+            author: {
+              name: "Elsa Gardenowl",
+              description: "posted 34 minutes ago",
+              image:
+                "https://images.unsplash.com/photo-1628890923662-2cb23c2e0cfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
+            },
+          },
+          {
+            image: lobo.src,
+            category: "decorations",
+            title: "Top 50 underrated plants for house decoration",
+            footer: "733 people liked this",
+            author: {
+              name: "Elsa Gardenowl",
+              description: "posted 34 minutes ago",
+              image:
+                "https://images.unsplash.com/photo-1628890923662-2cb23c2e0cfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
+            },
+          },
+          {
+            image: lobo.src,
+            category: "decorations",
+            title: "Top 50 underrated plants for house decoration",
+            footer: "733 people liked this",
+            author: {
+              name: "Elsa Gardenowl",
+              description: "posted 34 minutes ago",
+              image:
+                "https://images.unsplash.com/photo-1628890923662-2cb23c2e0cfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
+            },
+          },
+          {
+            image: lobo.src,
+            category: "decorations",
+            title: "Top 50 underrated plants for house decoration",
+            footer: "733 people liked this",
+            author: {
+              name: "Elsa Gardenowl",
+              description: "posted 34 minutes ago",
+              image:
+                "https://images.unsplash.com/photo-1628890923662-2cb23c2e0cfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
+            },
+          },
+          {
+            image: lobo.src,
+            category: "decorations",
+            title: "Top 50 underrated plants for house decoration",
+            footer: "733 people liked this",
+            author: {
+              name: "Elsa Gardenowl",
+              description: "posted 34 minutes ago",
+              image:
+                "https://images.unsplash.com/photo-1628890923662-2cb23c2e0cfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
+            },
+          },
+          {
+            image: lobo.src,
+            category: "decorations",
+            title: "Top 50 underrated plants for house decoration",
+            footer: "733 people liked this",
+            author: {
+              name: "Elsa Gardenowl",
+              description: "posted 34 minutes ago",
+              image:
+                "https://images.unsplash.com/photo-1628890923662-2cb23c2e0cfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
+            },
+          },
+        ]}
+      />
+      <BannerHome />
+      <SectionCardImage
+        articles={[
+          {
+            image: imagen.src,
+          },
+          {
+            image: imagen.src,
+          },
+          {
+            image: imagen.src,
+          },
+          {
+            image: imagen.src,
+          },
+          {
+            image: imagen.src,
+          },
+          {
+            image: imagen.src,
+          },
+        ]}
+      />
+      <SectionCardImageFuture />
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+    </>
+  );
+};
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+export default page;
